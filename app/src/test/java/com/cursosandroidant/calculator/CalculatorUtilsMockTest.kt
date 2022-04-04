@@ -42,10 +42,21 @@ class CalculatorUtilsMockTest {
         assertTrue(isCorrect)
     }
 
+//    @Test
+//    fun calc_callAddOperator_invalidSub_noReturn() {
+//        val operator = "-"
+//        val operation = "4+." //4+-3
+//        var isCorrect = false
+//        calculatorUtils.addOperator(operator, operation) {
+//            isCorrect = true
+//        }
+//        assertFalse(isCorrect)
+//    }
+
     @Test
     fun calc_callAddOperator_invalidSub_noReturn() {
         val operator = "-"
-        val operation = "4+." //4+-3
+        val operation = "3-"
         var isCorrect = false
         calculatorUtils.addOperator(operator, operation) {
             isCorrect = true
